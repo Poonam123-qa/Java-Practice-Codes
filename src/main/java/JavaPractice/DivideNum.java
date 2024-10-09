@@ -7,10 +7,10 @@ public class DivideNum {
 
         Scanner sc =new Scanner(System.in);
 
-        System.out.println("Enter the first number");
+        System.out.println("Enter the first number:");
         int a=sc.nextInt();
 
-        System.out.println("Enter the second number");
+        System.out.println("Enter the second number:");
         int b =sc.nextInt();
 
         double c= (double) a /b;
