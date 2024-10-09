@@ -16,7 +16,7 @@ public class SwapNumb {
         num2 = num1-num2;
         num1 = num1-num2;
 
-        System.out.println("The swappig of the numbers is:"+num1+" "+num2);
+        System.out.println("The Swapping of the numbers is:"+num1+" "+num2);
 
     }
 }
