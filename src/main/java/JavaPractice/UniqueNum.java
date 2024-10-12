@@ -17,7 +17,7 @@ public class UniqueNum {
 
                     if(k!=j && k!=i && i!=j){                                   // Check if 'i,' 'j,' and 'k' are all different (not equal)
                         num++;
-                        System.out.println(i + "" + j + "" + k);    // Print the generated three-digit number
+                        System.out.println(i + " " + j + " " + k);    // Print the generated three-digit number
                     }
                 }
             }
