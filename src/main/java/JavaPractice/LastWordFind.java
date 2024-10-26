@@ -11,7 +11,7 @@ public class LastWordFind {
         String[] words = word.trim().split("\\s+"); // Split by whitespace
 
         if (words.length <2 ){
-            System.out.println("Not enough words");
+            System.out.println("Not enough words...");
         }
         else{
             System.out.println(words[words.length-2]);
