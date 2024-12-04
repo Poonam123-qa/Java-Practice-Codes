@@ -1,5 +1,7 @@
 package Array;
 
+import java.lang.String;
+
 public class MaxSal {
     public static void main(String args[]){
         int sal[]={20, 30, 10, 50, 40, 30, 80, 90};
