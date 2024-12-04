@@ -1,7 +1,9 @@
 package Array;
 
+import java.lang.String;
+
 public class Indexfind {
-    public static void main(String args[]) {
+    public static void main(String args[]){
         int a[]={10, 20, 40, 50, 60};
 
         System.out.println("The index value is "+a[0]);
