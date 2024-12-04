@@ -2,7 +2,7 @@ package Methods;
 
 public class Staticmethod {
 
-    public Staticmethod() {
+    Staticmethod() {
         System.out.println("Constructor executed.");   //Constructor will be called at time of object creations
     }
     static {
