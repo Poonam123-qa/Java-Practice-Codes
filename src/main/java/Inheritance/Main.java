@@ -8,5 +8,13 @@ public class Main {
 
         Cat c=new Cat();                         // Create an instance of Cat class because have to call specific cat class methods
         c.makeSound();
+
+
+        Vehicle v=new Vehicle();
+        v.drive();
+
+        Car car=new Car();
+        car.drive();
+
     }
 }
