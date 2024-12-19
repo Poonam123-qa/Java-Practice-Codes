@@ -42,7 +42,7 @@ class main{
         Animal p=new Bird();                      //Dynamic dispatch means the calling the subclass using the base class
         p.Sound();
 
-        Animal x=new Cat();
+        Animal x=new Cat();                     //Dynamic dispatch means the calling the subclass using the base class
         x.Sound();
     }
 }
