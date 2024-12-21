@@ -19,6 +19,12 @@ class Athlete extends Person{
         // Print a message about the athlete's training
         System.out.println("Athlete: Training allows the body to gradually build up strength and endurance, improve skill levels and build motivation, ambition and confidence.");
     }
+
+    //hiding the functionality
+    public void action1(){
+        eat();
+        exercise();
+    }
 }
 
 class LazyPerson extends Person {
@@ -34,18 +40,22 @@ class LazyPerson extends Person {
     public void exercise() {
         // Print a message about the lazy person's exercise habits
         System.out.println("Couch Potato: Rarely exercising or being physically active.");
+
+        }
+
+    public void action(){
+        eat();
+        exercise();
     }
 }
 
 class Testing{
 
     public static void main(String args[]){
-        Person a=new Athlete();                //Dynamic dispatch
-        a.eat();
-        a.exercise();
+        Athlete p=new Athlete();         //When we are hiding the functionality the have to create direct subclass object
+        p.action1();
 
-        Person l=new LazyPerson();
-        l.eat();
-        l.exercise();
+        LazyPerson l=new LazyPerson();
+        l.action();
     }
 }
