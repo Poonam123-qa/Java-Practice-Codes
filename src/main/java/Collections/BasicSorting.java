@@ -18,5 +18,9 @@ public class BasicSorting {
         Collections.sort(marks);
         System.out.println("The sorted marks is...."+marks);
 
+        System.out.println("The max marks is...."+Collections.max(marks));
+
+        System.out.println("The min marks is...."+Collections.min(marks));
+
     }
 }
