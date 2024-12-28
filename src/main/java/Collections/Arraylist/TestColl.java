@@ -1,6 +1,7 @@
-package Collections;
+package Collections.Arraylist;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class TestColl {
@@ -22,8 +23,8 @@ public class TestColl {
         Mylist.contains("Poonam");
         System.out.println("Contains function...."+Mylist);
 
-        Mylist.set(1, "Anki");
-        System.out.println("Set value..."+Mylist);                    //at the index 1 replacing this value
+        //Mylist.set(6, "Anki");
+        //System.out.println("Set value..."+Mylist);                    //at the index 1 replacing this value
 
         System.out.println("Checking empty..."+Mylist.isEmpty());
 
@@ -31,6 +32,15 @@ public class TestColl {
 
         for (int i=0;i<Mylist.size();i++){
             System.out.println(Mylist.get(i));
+
+            Iterator<String> its=Mylist.iterator();
+            while (its.hasNext()){
+                try {
+                    System.out.println("The iterator string is...."+its.next());
+                } catch (Exception e) {
+                    System.out.println("The exeception occurs for iterations...");
+                }
+            }
         }
     }
 }
