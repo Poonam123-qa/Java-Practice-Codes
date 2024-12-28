@@ -1,33 +1,43 @@
 package Collections.Arraylist;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Compare {
 
-    public static void main(String args[]){
+    public static void main(String args[]) {
 
-        Student s=new Student(1,"Poonam");
-        Student s1=new Student(2,"Aaryan");
-        Student s2=new Student(3,"Gaikwad");
+        // Create Student objects
+        Students s = new Students(1, "Poonam");
+        Students s1 = new Students(2, "Aaryan");
+        Students s2 = new Students(4, "Gaikwad");
+        Students s3 = new Students(3, "Gaikwad");
 
-        ArrayList a=new ArrayList();
+        // Add Students to ArrayList
+        ArrayList<Students> a = new ArrayList<>();
         a.add(s);
         a.add(s1);
         a.add(s2);
-        System.out.println("The list is..."+a);                         //address is getting printed to over come this create tostring method
+        a.add(s3);
 
+        // Print unsorted list
+        System.out.println("Unsorted list: " + a);
 
+        // Sort the list
+        Collections.sort(a);
+
+        // Print sorted list
+        System.out.println("Sorted list: " + a);
     }
 }
 
-
-class Students implements Comparable{
+class Students implements Comparable<Students> {
     private Integer id;
     private String name;
 
-    Students (Integer id,String name){
-        this.id=id;
-        this.name=name;
+    Students(Integer id, String name) {
+        this.id = id;
+        this.name = name;
     }
 
     @Override
@@ -55,7 +65,7 @@ class Students implements Comparable{
     }
 
     @Override
-    public int compareTo(Object o) {                         //if the multiple value are their to compare then we can use the comparable implements and compare to method
-        return 0;
+    public int compareTo(Students o) {
+        return Integer.compare(this.id, o.id);
     }
 }
